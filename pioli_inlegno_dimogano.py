@@ -2,326 +2,329 @@ import streamlit as st
 
 
 def attivita():
-    giornii = str(input("inserire i giorni delle attività"))
-    priorità = str(input("priorità:"))
-    giorni = giornii.split()
-    pr = priorità.split()
-    c = []
-    a = []
-    j = []
-    a.append(float(giorni[0]))
-    print(giorni)
-
-    # a1
-    if True:
-        if "a1a2" in pr:
-            if "a2a3" in pr or "a2a4" in pr or "a2a5" in pr or "a2a6" in pr or "a2a7" in pr or "a2a8" in pr or "a2a9" in pr or "a2a10" in pr or "a2a11" in pr or len(
-                    giorni) == 2:
-                d = giorni[1]
-                c.append(float(d))
-        if "a1a3" in pr:
-            if "a3a4" in pr or "a3a5" in pr or "a3a6" in pr or "a3a7" in pr or "a3a8" in pr or "a3a9" in pr or "a3a10" in pr or "a3a11" in pr or len(
-                    giorni) == 3:
-                d = giorni[2]
-                c.append(float(d))
-        if "a1a4" in pr:
-            if "a4a5" in pr or "a4a6" in pr or "a4a7" in pr or "a4a8" in pr or "a4a9" in pr or "a4a10" in pr or "a4a11" in pr or len(
-                    giorni) == 4:
-                d = giorni[3]
-                c.append(float(d))
-        if "a1a5" in pr:
-            if "a5a6" in pr or "a5a7" in pr or "a5a8" in pr or "a5a9" in pr or "a5a10" in pr or "a5a11" in pr or len(
-                    giorni) == 5:
-                d = giorni[4]
-                c.append(float(d))
-        if "a1a6" in pr:
-            if "a6a7" in pr or "6a8" in pr or "a6a9" in pr or "a6a10" in pr or "a6a11" in pr or len(giorni) == 6:
-                d = giorni[5]
-                c.append(float(d))
-        if "a1a7" in pr:
-            if "a7a8" in pr or "7a9" in pr or "a7a10" in pr or "a7a11" in pr or len(giorni) == 7:
-                d = giorni[6]
-                c.append(float(d))
-        if "a1a8" in pr:
-            if "a8a9" in pr or "8a10" in pr or "a8a11" in pr or len(giorni) == 8:
-                d = giorni[7]
-                c.append(float(d))
-        if "a1a9" in pr:
-            if "a9a10" in pr or "9a11" in pr or len(giorni) == 9:
-                d = giorni[8]
-                c.append(float(d))
-        if "a1a10" in pr:
-            if "a10a11" in pr or len(giorni) == 10:
-                d = giorni[9]
-                c.append(float(d))
-        if "a1a11" in pr:
-            d = giorni[10]
-            c.append(float(d))
-
-        try:
-            a.append(max(c))
-        except:
-            pass
-        c = [0]  # #
-
-    # a2
-    if True:
-        if "a2a3" in pr:
-            if "a3a4" in pr or "a3a5" in pr or "a3a6" in pr or "a3a7" in pr or "a3a8" in pr or "a3a9" in pr or "a3a10" in pr or "a3a11" in pr or len(
-                    giorni) == 3:
-                d = giorni[2]
-                c.append(float(d))
-        if "a2a4" in pr:
-            if "a4a5" in pr or "a4a6" in pr or "a4a7" in pr or "a4a8" in pr or "a4a9" in pr or "a4a10" in pr or "a4a11" in pr or len(
-                    giorni) == 4:
-                d = giorni[3]
-                c.append(float(d))
-        if "a2a5" in pr:
-            if "a5a6" in pr or "a5a7" in pr or "a5a8" in pr or "a5a9" in pr or "a5a10" in pr or "a5a11" in pr or len(
-                    giorni) == 5:
-                d = giorni[4]
-                c.append(float(d))
-        if "a2a6" in pr:
-            if "a6a7" in pr or "6a8" in pr or "a6a9" in pr or "a6a10" in pr or "a6a11" in pr or len(giorni) == 6:
-                d = giorni[5]
-                c.append(float(d))
-        if "a2a7" in pr:
-            if "a7a8" in pr or "7a9" in pr or "a7a10" in pr or "a7a11" in pr or len(giorni) == 7:
-                d = giorni[6]
-                c.append(float(d))
-        if "a2a8" in pr:
-            if "a8a9" in pr or "8a10" in pr or "a8a11" in pr or len(giorni) == 8:
-                d = giorni[7]
-                c.append(float(d))
-        if "a2a9" in pr:
-            if "a9a10" in pr or "9a11" in pr or len(giorni) == 9:
-                d = giorni[8]
-                c.append(float(d))
-        if "a2a10" in pr:
-            if "a10a11" in pr or len(giorni) == 10:
-                d = giorni[9]
-                c.append(float(d))
-        if "a2a11" in pr:
-            d = giorni[10]
-            c.append(float(d))
-
-        try:
-            a.append(max(c))
-        except:
-            pass
-        c = [0]
-
-    # a3
-    if True:
-        if "a3a4" in pr:
-            if "a4a5" in pr or "a4a6" in pr or "a4a7" in pr or "a4a8" in pr or "a4a9" in pr or "a4a10" in pr or "a4a11" in pr or len(
-                    giorni) == 4:
-                d = giorni[3]
-                c.append(float(d))
-        if "a3a5" in pr:
-            if "a5a6" in pr or "a5a7" in pr or "a5a8" in pr or "a5a9" in pr or "a5a10" in pr or "a5a11" in pr or len(
-                    giorni) == 5:
-                d = giorni[4]
-                c.append(float(d))
-        if "a3a6" in pr:
-            if "a6a7" in pr or "6a8" in pr or "a6a9" in pr or "a6a10" in pr or "a6a11" in pr or len(giorni) == 6:
-                d = giorni[5]
-                c.append(float(d))
-        if "a3a7" in pr:
-            if "a7a8" in pr or "7a9" in pr or "a7a10" in pr or "a7a11" in pr or len(giorni) == 7:
-                d = giorni[6]
-                c.append(float(d))
-        if "a3a8" in pr:
-            if "a8a9" in pr or "8a10" in pr or "a8a11" in pr or len(giorni) == 8:
-                d = giorni[7]
-                c.append(float(d))
-        if "a3a9" in pr:
-            if "a9a10" in pr or "9a11" in pr or len(giorni) == 9:
-                d = giorni[8]
-                c.append(float(d))
-        if "a3a10" in pr:
-            if "a10a11" in pr or len(giorni) == 10:
-                d = giorni[9]
-                c.append(float(d))
-        if "a3a11" in pr:
-            d = giorni[10]
-            c.append(float(d))
-
-        try:
-            a.append(max(c))
-        except:
-            pass
-        c = [0]
-
-    # a4
-    if True:
-        if "a4a5" in pr:
-            if "a5a6" in pr or "a5a7" in pr or "a5a8" in pr or "a5a9" in pr or "a5a10" in pr or "a5a11" in pr or len(
-                    giorni) == 5:
-                d = giorni[4]
-                c.append(float(d))
-        if "a4a6" in pr:
-            if "a6a7" in pr or "6a8" in pr or "a6a9" in pr or "a6a10" in pr or "a6a11" in pr or len(giorni) == 6:
-                d = giorni[5]
-                c.append(float(d))
-        if "a4a7" in pr:
-            if "a7a8" in pr or "7a9" in pr or "a7a10" in pr or "a7a11" in pr or len(giorni) == 7:
-                d = giorni[6]
-                c.append(float(d))
-        if "a4a8" in pr:
-            if "a8a9" in pr or "8a10" in pr or "a8a11" in pr or len(giorni) == 8:
-                d = giorni[7]
-                c.append(float(d))
-        if "a4a9" in pr:
-            if "a9a10" in pr or "9a11" in pr or len(giorni) == 9:
-                d = giorni[8]
-                c.append(float(d))
-        if "a4a10" in pr:
-            if "a10a11" in pr or len(giorni) == 10:
-                d = giorni[9]
-                c.append(float(d))
-        if "a4a11" in pr:
-            d = giorni[10]
-            c.append(float(d))
-
-        try:
-            a.append(max(c))
-        except:
-            pass
-        c = [0]
-
-    # a5
-    if True:
-        if "a5a6" in pr:
-            if "a6a7" in pr or "6a8" in pr or "a6a9" in pr or "a6a10" in pr or "a6a11" in pr or len(giorni) == 6:
-                d = giorni[5]
-                c.append(float(d))
-        if "a5a7" in pr:
-            if "a7a8" in pr or "7a9" in pr or "a7a10" in pr or "a7a11" in pr or len(giorni) == 7:
-                d = giorni[6]
-                c.append(float(d))
-        if "a5a8" in pr:
-            if "a8a9" in pr or "8a10" in pr or "a8a11" in pr or len(giorni) == 8:
-                d = giorni[7]
-                c.append(float(d))
-        if "a5a9" in pr:
-            if "a9a10" in pr or "9a11" in pr or len(giorni) == 9:
-                d = giorni[8]
-                c.append(float(d))
-        if "a5a10" in pr:
-            if "a10a11" in pr or len(giorni) == 10:
-                d = giorni[9]
-                c.append(float(d))
-        if "a5a11" in pr:
-            d = giorni[10]
-            c.append(float(d))
-
-        try:
-            a.append(max(c))
-        except:
-            pass
-        c = [0]
-
-    # a6
-    if True:
-        if "a6a7" in pr:
-            if "a7a8" in pr or "7a9" in pr or "a7a10" in pr or "a7a11" in pr or len(giorni) == 7:
-                d = giorni[6]
-                c.append(float(d))
-        if "a6a8" in pr:
-            if "a8a9" in pr or "8a10" in pr or "a8a11" in pr or len(giorni) == 8:
-                d = giorni[7]
-                c.append(float(d))
-        if "a6a9" in pr:
-            if "a9a10" in pr or "9a11" in pr or len(giorni) == 9:
-                d = giorni[8]
-                c.append(float(d))
-        if "a6a10" in pr:
-            if "a10a11" in pr or len(giorni) == 10:
-                d = giorni[9]
-                c.append(float(d))
-        if "a6a11" in pr:
-            d = giorni[10]
-            c.append(float(d))
-
-        try:
-            a.append(max(c))
-        except:
-            pass
-        c = [0]
-
-    # a7
-    if True:
-        if "a7a8" in pr:
-            if "a8a9" in pr or "8a10" in pr or "a8a11" in pr or len(giorni) == 8:
-                d = giorni[7]
-                c.append(float(d))
-        if "a7a9" in pr:
-            if "a9a10" in pr or "9a11" in pr or len(giorni) == 9:
-                d = giorni[8]
-                c.append(float(d))
-        if "a7a10" in pr:
-            if "a10a11" in pr or len(giorni) == 10:
-                d = giorni[9]
-                c.append(float(d))
-        if "a7a11" in pr:
-            d = giorni[10]
-            c.append(float(d))
-
-        try:
-            a.append(max(c))
-        except:
-            pass
-        c = [0]
-
-    # a8
-    if True:
-        if "a8a9" in pr:
-            if "a9a10" in pr or "9a11" in pr or len(giorni) == 9:
-                d = giorni[8]
-                c.append(float(d))
-        if "a8a10" in pr:
-            if "a10a11" in pr or len(giorni) == 10:
-                d = giorni[9]
-                c.append(float(d))
-        if "a8a11" in pr:
-            d = giorni[10]
-            c.append(float(d))
-
-        try:
-            a.append(max(c))
-        except:
-            pass
-        c = 0
-
-    # a9
-    if True:
-        if "a9a10" in pr:
-            if "a10a11" in pr or len(giorni) == 10:
-                d = giorni[9]
-                c.append(float(d))
-        if "a9a11" in pr:
-            d = giorni[10]
-            c.append(float(d))
-
-        try:
-            a.append(max(c))
-        except:
-            pass
-        c = 0
-
-    if "a10a11" in pr:
-        d = giorni[10]
-        c.append(float(d))
-
     try:
-        a.append(max(c))
+        giornii = str(input("inserire i giorni delle attività"))
+        priorità = str(input("priorità:"))
+        giorni = giornii.split()
+        pr = priorità.split()
+        c = []
+        a = []
+        j = []
+        a.append(float(giorni[0]))
+        print(giorni)
+    
+        # a1
+        if True:
+            if "a1a2" in pr:
+                if "a2a3" in pr or "a2a4" in pr or "a2a5" in pr or "a2a6" in pr or "a2a7" in pr or "a2a8" in pr or "a2a9" in pr or "a2a10" in pr or "a2a11" in pr or len(
+                        giorni) == 2:
+                    d = giorni[1]
+                    c.append(float(d))
+            if "a1a3" in pr:
+                if "a3a4" in pr or "a3a5" in pr or "a3a6" in pr or "a3a7" in pr or "a3a8" in pr or "a3a9" in pr or "a3a10" in pr or "a3a11" in pr or len(
+                        giorni) == 3:
+                    d = giorni[2]
+                    c.append(float(d))
+            if "a1a4" in pr:
+                if "a4a5" in pr or "a4a6" in pr or "a4a7" in pr or "a4a8" in pr or "a4a9" in pr or "a4a10" in pr or "a4a11" in pr or len(
+                        giorni) == 4:
+                    d = giorni[3]
+                    c.append(float(d))
+            if "a1a5" in pr:
+                if "a5a6" in pr or "a5a7" in pr or "a5a8" in pr or "a5a9" in pr or "a5a10" in pr or "a5a11" in pr or len(
+                        giorni) == 5:
+                    d = giorni[4]
+                    c.append(float(d))
+            if "a1a6" in pr:
+                if "a6a7" in pr or "6a8" in pr or "a6a9" in pr or "a6a10" in pr or "a6a11" in pr or len(giorni) == 6:
+                    d = giorni[5]
+                    c.append(float(d))
+            if "a1a7" in pr:
+                if "a7a8" in pr or "7a9" in pr or "a7a10" in pr or "a7a11" in pr or len(giorni) == 7:
+                    d = giorni[6]
+                    c.append(float(d))
+            if "a1a8" in pr:
+                if "a8a9" in pr or "8a10" in pr or "a8a11" in pr or len(giorni) == 8:
+                    d = giorni[7]
+                    c.append(float(d))
+            if "a1a9" in pr:
+                if "a9a10" in pr or "9a11" in pr or len(giorni) == 9:
+                    d = giorni[8]
+                    c.append(float(d))
+            if "a1a10" in pr:
+                if "a10a11" in pr or len(giorni) == 10:
+                    d = giorni[9]
+                    c.append(float(d))
+            if "a1a11" in pr:
+                d = giorni[10]
+                c.append(float(d))
+    
+            try:
+                a.append(max(c))
+            except:
+                pass
+            c = [0]  # #
+    
+        # a2
+        if True:
+            if "a2a3" in pr:
+                if "a3a4" in pr or "a3a5" in pr or "a3a6" in pr or "a3a7" in pr or "a3a8" in pr or "a3a9" in pr or "a3a10" in pr or "a3a11" in pr or len(
+                        giorni) == 3:
+                    d = giorni[2]
+                    c.append(float(d))
+            if "a2a4" in pr:
+                if "a4a5" in pr or "a4a6" in pr or "a4a7" in pr or "a4a8" in pr or "a4a9" in pr or "a4a10" in pr or "a4a11" in pr or len(
+                        giorni) == 4:
+                    d = giorni[3]
+                    c.append(float(d))
+            if "a2a5" in pr:
+                if "a5a6" in pr or "a5a7" in pr or "a5a8" in pr or "a5a9" in pr or "a5a10" in pr or "a5a11" in pr or len(
+                        giorni) == 5:
+                    d = giorni[4]
+                    c.append(float(d))
+            if "a2a6" in pr:
+                if "a6a7" in pr or "6a8" in pr or "a6a9" in pr or "a6a10" in pr or "a6a11" in pr or len(giorni) == 6:
+                    d = giorni[5]
+                    c.append(float(d))
+            if "a2a7" in pr:
+                if "a7a8" in pr or "7a9" in pr or "a7a10" in pr or "a7a11" in pr or len(giorni) == 7:
+                    d = giorni[6]
+                    c.append(float(d))
+            if "a2a8" in pr:
+                if "a8a9" in pr or "8a10" in pr or "a8a11" in pr or len(giorni) == 8:
+                    d = giorni[7]
+                    c.append(float(d))
+            if "a2a9" in pr:
+                if "a9a10" in pr or "9a11" in pr or len(giorni) == 9:
+                    d = giorni[8]
+                    c.append(float(d))
+            if "a2a10" in pr:
+                if "a10a11" in pr or len(giorni) == 10:
+                    d = giorni[9]
+                    c.append(float(d))
+            if "a2a11" in pr:
+                d = giorni[10]
+                c.append(float(d))
+    
+            try:
+                a.append(max(c))
+            except:
+                pass
+            c = [0]
+    
+        # a3
+        if True:
+            if "a3a4" in pr:
+                if "a4a5" in pr or "a4a6" in pr or "a4a7" in pr or "a4a8" in pr or "a4a9" in pr or "a4a10" in pr or "a4a11" in pr or len(
+                        giorni) == 4:
+                    d = giorni[3]
+                    c.append(float(d))
+            if "a3a5" in pr:
+                if "a5a6" in pr or "a5a7" in pr or "a5a8" in pr or "a5a9" in pr or "a5a10" in pr or "a5a11" in pr or len(
+                        giorni) == 5:
+                    d = giorni[4]
+                    c.append(float(d))
+            if "a3a6" in pr:
+                if "a6a7" in pr or "6a8" in pr or "a6a9" in pr or "a6a10" in pr or "a6a11" in pr or len(giorni) == 6:
+                    d = giorni[5]
+                    c.append(float(d))
+            if "a3a7" in pr:
+                if "a7a8" in pr or "7a9" in pr or "a7a10" in pr or "a7a11" in pr or len(giorni) == 7:
+                    d = giorni[6]
+                    c.append(float(d))
+            if "a3a8" in pr:
+                if "a8a9" in pr or "8a10" in pr or "a8a11" in pr or len(giorni) == 8:
+                    d = giorni[7]
+                    c.append(float(d))
+            if "a3a9" in pr:
+                if "a9a10" in pr or "9a11" in pr or len(giorni) == 9:
+                    d = giorni[8]
+                    c.append(float(d))
+            if "a3a10" in pr:
+                if "a10a11" in pr or len(giorni) == 10:
+                    d = giorni[9]
+                    c.append(float(d))
+            if "a3a11" in pr:
+                d = giorni[10]
+                c.append(float(d))
+    
+            try:
+                a.append(max(c))
+            except:
+                pass
+            c = [0]
+    
+        # a4
+        if True:
+            if "a4a5" in pr:
+                if "a5a6" in pr or "a5a7" in pr or "a5a8" in pr or "a5a9" in pr or "a5a10" in pr or "a5a11" in pr or len(
+                        giorni) == 5:
+                    d = giorni[4]
+                    c.append(float(d))
+            if "a4a6" in pr:
+                if "a6a7" in pr or "6a8" in pr or "a6a9" in pr or "a6a10" in pr or "a6a11" in pr or len(giorni) == 6:
+                    d = giorni[5]
+                    c.append(float(d))
+            if "a4a7" in pr:
+                if "a7a8" in pr or "7a9" in pr or "a7a10" in pr or "a7a11" in pr or len(giorni) == 7:
+                    d = giorni[6]
+                    c.append(float(d))
+            if "a4a8" in pr:
+                if "a8a9" in pr or "8a10" in pr or "a8a11" in pr or len(giorni) == 8:
+                    d = giorni[7]
+                    c.append(float(d))
+            if "a4a9" in pr:
+                if "a9a10" in pr or "9a11" in pr or len(giorni) == 9:
+                    d = giorni[8]
+                    c.append(float(d))
+            if "a4a10" in pr:
+                if "a10a11" in pr or len(giorni) == 10:
+                    d = giorni[9]
+                    c.append(float(d))
+            if "a4a11" in pr:
+                d = giorni[10]
+                c.append(float(d))
+    
+            try:
+                a.append(max(c))
+            except:
+                pass
+            c = [0]
+    
+        # a5
+        if True:
+            if "a5a6" in pr:
+                if "a6a7" in pr or "6a8" in pr or "a6a9" in pr or "a6a10" in pr or "a6a11" in pr or len(giorni) == 6:
+                    d = giorni[5]
+                    c.append(float(d))
+            if "a5a7" in pr:
+                if "a7a8" in pr or "7a9" in pr or "a7a10" in pr or "a7a11" in pr or len(giorni) == 7:
+                    d = giorni[6]
+                    c.append(float(d))
+            if "a5a8" in pr:
+                if "a8a9" in pr or "8a10" in pr or "a8a11" in pr or len(giorni) == 8:
+                    d = giorni[7]
+                    c.append(float(d))
+            if "a5a9" in pr:
+                if "a9a10" in pr or "9a11" in pr or len(giorni) == 9:
+                    d = giorni[8]
+                    c.append(float(d))
+            if "a5a10" in pr:
+                if "a10a11" in pr or len(giorni) == 10:
+                    d = giorni[9]
+                    c.append(float(d))
+            if "a5a11" in pr:
+                d = giorni[10]
+                c.append(float(d))
+    
+            try:
+                a.append(max(c))
+            except:
+                pass
+            c = [0]
+    
+        # a6
+        if True:
+            if "a6a7" in pr:
+                if "a7a8" in pr or "7a9" in pr or "a7a10" in pr or "a7a11" in pr or len(giorni) == 7:
+                    d = giorni[6]
+                    c.append(float(d))
+            if "a6a8" in pr:
+                if "a8a9" in pr or "8a10" in pr or "a8a11" in pr or len(giorni) == 8:
+                    d = giorni[7]
+                    c.append(float(d))
+            if "a6a9" in pr:
+                if "a9a10" in pr or "9a11" in pr or len(giorni) == 9:
+                    d = giorni[8]
+                    c.append(float(d))
+            if "a6a10" in pr:
+                if "a10a11" in pr or len(giorni) == 10:
+                    d = giorni[9]
+                    c.append(float(d))
+            if "a6a11" in pr:
+                d = giorni[10]
+                c.append(float(d))
+    
+            try:
+                a.append(max(c))
+            except:
+                pass
+            c = [0]
+    
+        # a7
+        if True:
+            if "a7a8" in pr:
+                if "a8a9" in pr or "8a10" in pr or "a8a11" in pr or len(giorni) == 8:
+                    d = giorni[7]
+                    c.append(float(d))
+            if "a7a9" in pr:
+                if "a9a10" in pr or "9a11" in pr or len(giorni) == 9:
+                    d = giorni[8]
+                    c.append(float(d))
+            if "a7a10" in pr:
+                if "a10a11" in pr or len(giorni) == 10:
+                    d = giorni[9]
+                    c.append(float(d))
+            if "a7a11" in pr:
+                d = giorni[10]
+                c.append(float(d))
+    
+            try:
+                a.append(max(c))
+            except:
+                pass
+            c = [0]
+    
+        # a8
+        if True:
+            if "a8a9" in pr:
+                if "a9a10" in pr or "9a11" in pr or len(giorni) == 9:
+                    d = giorni[8]
+                    c.append(float(d))
+            if "a8a10" in pr:
+                if "a10a11" in pr or len(giorni) == 10:
+                    d = giorni[9]
+                    c.append(float(d))
+            if "a8a11" in pr:
+                d = giorni[10]
+                c.append(float(d))
+    
+            try:
+                a.append(max(c))
+            except:
+                pass
+            c = 0
+    
+        # a9
+        if True:
+            if "a9a10" in pr:
+                if "a10a11" in pr or len(giorni) == 10:
+                    d = giorni[9]
+                    c.append(float(d))
+            if "a9a11" in pr:
+                d = giorni[10]
+                c.append(float(d))
+    
+            try:
+                a.append(max(c))
+            except:
+                pass
+            c = 0
+    
+        if "a10a11" in pr:
+            d = giorni[10]
+            c.append(float(d))
+    
+        try:
+            a.append(max(c))
+        except:
+            pass
+        c = 0
+        a = list(dict.fromkeys(a))
+        print(a)
+        print("risultato:", int(sum(a)))
     except:
         pass
-    c = 0
-    a = list(dict.fromkeys(a))
-    print(a)
-    print("risultato:", int(sum(a)))
 
 
 def corriere():
@@ -504,6 +507,12 @@ input = st.text_input
 if want == 'Attività':
     attivita()
 elif want == 'Corriere':
-    corriere()
+    try:
+        corriere()
+    except:
+        pass
 elif want == 'Crittografia':
-    crittografia()
+    try:
+        crittografia()
+    except:
+        pass
