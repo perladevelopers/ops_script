@@ -12,7 +12,7 @@ def attivita():
         j = []
         a.append(float(giorni[0]))
         print(giorni)
-    
+
         # a1
         if True:
             if "a1a2" in pr:
@@ -58,13 +58,13 @@ def attivita():
             if "a1a11" in pr:
                 d = giorni[10]
                 c.append(float(d))
-    
+
             try:
                 a.append(max(c))
             except:
                 pass
             c = [0]  # #
-    
+
         # a2
         if True:
             if "a2a3" in pr:
@@ -105,13 +105,13 @@ def attivita():
             if "a2a11" in pr:
                 d = giorni[10]
                 c.append(float(d))
-    
+
             try:
                 a.append(max(c))
             except:
                 pass
             c = [0]
-    
+
         # a3
         if True:
             if "a3a4" in pr:
@@ -147,13 +147,13 @@ def attivita():
             if "a3a11" in pr:
                 d = giorni[10]
                 c.append(float(d))
-    
+
             try:
                 a.append(max(c))
             except:
                 pass
             c = [0]
-    
+
         # a4
         if True:
             if "a4a5" in pr:
@@ -184,13 +184,13 @@ def attivita():
             if "a4a11" in pr:
                 d = giorni[10]
                 c.append(float(d))
-    
+
             try:
                 a.append(max(c))
             except:
                 pass
             c = [0]
-    
+
         # a5
         if True:
             if "a5a6" in pr:
@@ -216,13 +216,13 @@ def attivita():
             if "a5a11" in pr:
                 d = giorni[10]
                 c.append(float(d))
-    
+
             try:
                 a.append(max(c))
             except:
                 pass
             c = [0]
-    
+
         # a6
         if True:
             if "a6a7" in pr:
@@ -244,13 +244,13 @@ def attivita():
             if "a6a11" in pr:
                 d = giorni[10]
                 c.append(float(d))
-    
+
             try:
                 a.append(max(c))
             except:
                 pass
             c = [0]
-    
+
         # a7
         if True:
             if "a7a8" in pr:
@@ -268,13 +268,13 @@ def attivita():
             if "a7a11" in pr:
                 d = giorni[10]
                 c.append(float(d))
-    
+
             try:
                 a.append(max(c))
             except:
                 pass
             c = [0]
-    
+
         # a8
         if True:
             if "a8a9" in pr:
@@ -288,13 +288,13 @@ def attivita():
             if "a8a11" in pr:
                 d = giorni[10]
                 c.append(float(d))
-    
+
             try:
                 a.append(max(c))
             except:
                 pass
             c = 0
-    
+
         # a9
         if True:
             if "a9a10" in pr:
@@ -304,17 +304,17 @@ def attivita():
             if "a9a11" in pr:
                 d = giorni[10]
                 c.append(float(d))
-    
+
             try:
                 a.append(max(c))
             except:
                 pass
             c = 0
-    
+
         if "a10a11" in pr:
             d = giorni[10]
             c.append(float(d))
-    
+
         try:
             a.append(max(c))
         except:
@@ -325,6 +325,29 @@ def attivita():
         print("risultato:", int(sum(a)))
     except:
         pass
+
+
+def interpreter():
+    import streamlit as st
+
+    a = """A = 0
+    P = 3
+    C = 4
+
+    for i in range(A, P, C):
+        D = P + C + i
+
+    print(D)
+    """
+
+    st.title('ADAM2')
+    st.header('Python Interpreter')
+    b = st.text_area('scrivi il codice')
+
+    butt = st.button('Run Code')
+    write = st.write
+    if butt:
+        st.write(exec(b))
 
 
 def corriere():
@@ -500,7 +523,7 @@ def crittografia():
 # crittografia()
 
 st.header('OPS cracker')
-want = st.selectbox('What do u wanna do?', ('Attività', 'Corriere', 'Crittografia'))
+want = st.selectbox('What do u wanna do?', ('Attività', 'Corriere', 'Crittografia', 'Linguaggio'))
 
 print = st.write
 input = st.text_input
@@ -516,3 +539,5 @@ elif want == 'Crittografia':
         crittografia()
     except:
         pass
+elif want == 'Linguaggio':
+    interpreter()
