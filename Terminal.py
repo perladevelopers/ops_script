@@ -3,9 +3,9 @@ import streamlit as st
 
 st.header('Perla Enviroment TERMINAL')
 
-Blue = Fore.BLUE
-Red = Fore.RED
-Reset = Fore.RESET
+Blue = ''
+Red = ''
+Reset = ''
 
 printi = print
 print = st.write
