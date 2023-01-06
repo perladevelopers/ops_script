@@ -1,4 +1,3 @@
-from colorama import Fore
 import re
 import streamlit as st
 
