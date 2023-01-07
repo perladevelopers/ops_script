@@ -155,6 +155,13 @@ try:
             for arg in args:
                 print(arg + ' ', end='')
             print('\n')
+            
+        elif base == 'create':
+            with open(f'{argss[0]}', 'w') as f:
+                f.write('')
+        elif base == 'write':
+            with open(f'{argss[0]}', 'r') as f:
+                f.write(argss[1])
         elif base == 'spread':
             Spread_Calculator(float(args[0]), float(args[1]))
         elif base == 'easytk':
