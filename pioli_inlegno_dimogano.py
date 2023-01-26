@@ -518,9 +518,6 @@ def crittografia():
    print(caratteri)
 
 
-def ascesnore():
-
-
 def canali():
        canali = str(input('canali: '))
        direzioni = str(input('direzioni: '))
