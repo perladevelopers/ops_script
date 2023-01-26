@@ -412,7 +412,6 @@ def corriere():
     xxx = sorted(xxx)
     print(xxx)
 
-
 def crittografia():
     cripto = int(input("criptare(1) o decriptare(2)?"))
     parola = str(input("parola da crittare")).replace(' ', '')
@@ -422,15 +421,22 @@ def crittografia():
     alfabeto = tuple("abcdefghijklmnopqrstuvwxyz")
     posizione = range(len(alfabeto))
     lettere = dict(zip(alfabeto, posizione))
+    ripetizioni = int(input("ripetizioni"))
+
 
     risultato = []
     for lettera in chiave:
-        risultato.append(lettere[lettera])
+        risultato.append(int(lettere[lettera]))
     chiave = risultato
 
     if cripto == 2:
         for i in range(0, len(chiave)):
-            chiave[i] = 26 - (chiave[i])
+            chiave[i] = (26 - (chiave[i])) * ripetizioni
+
+    else:
+        for i in range(0, len(chiave)):
+            chiave[i] = chiave[i] * ripetizioni
+
 
     def crittografo(j):
         if caratteri[j] == "a":
