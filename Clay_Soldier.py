@@ -2,21 +2,26 @@ import streamlit as st
 import random as rd
 
 try:
-    zones = ['Desert', 'Mesa', 'Oak', 'lakes', 'Oceans', 'Jungle', 'Birch', 'Cave', 'Big Hills', 'Plains']
+    zones = ['Desert', 'Meadow', 'Pine', 'Birch', 'Savana', 'Miras', 'Plains', 'Autumn', 'Shrubble', 'Dried']
     objectives = {
-        'Conquista le zone Sabbiose ': '(Desert, Mesa)',
-        'Conquista le zone Idriche ': '(Oceans, Lakes)',
-        'Conquista le zone Rocciose ': '(Cave, Big Hills)',
+        'Conquista le zone Sabbiose ': '(Desert, Dried)',
+        'Conquista le zone Idriche ': '(Miras, Plains)',
+        'Conquista le zone Rocciose ': '(Savana, Shrubble)',
 
-        'Conquista le zone di Foresta ': '(Oak, Jungle)',
-        'Conquista le zone Pianeggianti ': '(Plains, Desert)',
-        'Conquista gli Altopiani ': '(Mesa, Big Hills)',
+        'Conquista le zone di Foresta ': '(Pine, Miras)',
+        'Conquista i Boschi ' '(Birch, Autumn)'
+        'Conquista le zone Pianeggianti ': '(Plains, Dried)',
+        'Conquista gli Altopiani ': '(Desert, Miras)',
+        
+        'Conquista il Continente del NORD ': '(Shrubble, Miras)',
+        'Conquista il Continente del SUD-EST ': '(Autumn, Pine, Meadow)',
+        'Conquista il Continente del SUD-OVEST ': '(Desert, Savana, Dried)',
+        'Conquista il Continente del CENTRO': '(Plains, Birch) e altre 2 basi a tua scelta',
 
         'Conquista 3 zone a tua scelta': '',
         'Conquista ': '(Birch, Lakes)',
         "Conquista un totale di 10 basi": '',
-
-        'Conquista le zone': '(Oak, Lakes)'
+        'Ottieni il controllo di 18 basi totali tra Neutre, Proprie e Conquistate': ''
     }
 
     st.title('RISIKRAFT - Randomizer')
@@ -24,7 +29,6 @@ try:
     wdr_zone = rd.randrange(0, len(zones))
     wdr_objectives = rd.randrange(0, len(objectives))
 
-    n_player = st.slider(label='Numero di Giocatori', min_value=2, max_value=10)
     zones_posse = str(st.text_input('Scrivi le zone che possiedi separate da una virgola')).split(',')
     name = st.text_input('Player Name')
     bc = st.button(label='Estrai Zona')
