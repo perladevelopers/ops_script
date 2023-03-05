@@ -29,7 +29,7 @@ try:
     wdr_zone = rd.randrange(0, len(zones))
     wdr_objectives = rd.randrange(0, len(objectives))
 
-    zones_posse = str(st.text_input('Scrivi le zone che possiedi separate da una virgola')).split(',')
+    zones_posse = str(st.text_input('Scrivi le zone che possiedi separate da una virgola, SOLO la prima lettera MAIUSCOLA')).split(',')
     name = st.text_input('Player Name')
     bc = st.button(label='Estrai Zona')
 
